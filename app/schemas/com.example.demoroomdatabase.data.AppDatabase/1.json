@@ -1,0 +1,61 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "9ee3fb0b31bc7914726ca798cbe9db81",
+    "entities": [
+      {
+        "tableName": "EmployeeEntity",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`employId` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `employ_name` TEXT, `employ_adrress` TEXT, `created_at` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "employId",
+            "columnName": "employId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "employ_name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "adrress",
+            "columnName": "employ_adrress",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createdAt",
+            "columnName": "created_at",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "employId"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "index_EmployeeEntity_employ_name_employ_adrress",
+            "unique": true,
+            "columnNames": [
+              "employ_name",
+              "employ_adrress"
+            ],
+            "createSql": "CREATE UNIQUE INDEX `index_EmployeeEntity_employ_name_employ_adrress` ON `${TABLE_NAME}` (`employ_name`, `employ_adrress`)"
+          }
+        ],
+        "foreignKeys": []
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"9ee3fb0b31bc7914726ca798cbe9db81\")"
+    ]
+  }
+}

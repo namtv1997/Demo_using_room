@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Demo-Room-Database.iml" filepath="$PROJECT_DIR$/Demo-Room-Database.iml" group="Demo-Room-Database" />
+      <module fileurl="file://$PROJECT_DIR$/app/Demo-Room-Database-app.iml" filepath="$PROJECT_DIR$/app/Demo-Room-Database-app.iml" group="Demo-Room-Database/app" />
+      <module fileurl="file://$PROJECT_DIR$/DemoRoomDatabase.iml" filepath="$PROJECT_DIR$/DemoRoomDatabase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+    </modules>
+  </component>
+</project>

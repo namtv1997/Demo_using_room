@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">DemoRoomDatabase</string>
+    <string name="hint_employee_name">Employ Name</string>
+    <string name="hint_address">Address</string>
+    <string name="hint_input_id">Input id</string>
+
+    <string name="label_save">Save</string>
+    <string name="label_get_all">GET ALL</string>
+    <string name="label_delete_all">delete ALL</string>
+    <string name="label_find_employee_by_id">Find Employee by id</string>
+    <string name="label_save_success">Saved successfully</string>
+    <string name="label_id">Id : </string>
+    <string name="label_name">Name : </string>
+    <string name="label_address">Address : </string>
+    <string name="label_created_date">Created date : </string>
+
+    <string name="error_id_employee_empty">ID employ should not be empty</string>
+    <string name="error_name_adress_empty">Name/address should not be empty</string>
+</resources>
