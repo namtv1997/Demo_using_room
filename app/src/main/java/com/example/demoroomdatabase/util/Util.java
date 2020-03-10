@@ -1,8 +1,8 @@
 package com.example.demoroomdatabase.util;
 
 import android.annotation.SuppressLint;
+import android.util.Log;
 
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -12,14 +12,11 @@ public class Util {
     public static String getFormattedDateString(Date date) {
 
         try {
-           SimpleDateFormat spf = new SimpleDateFormat("EEE MMM d HH:mm:ss zzz yyyy");
-            String dateString = spf.format(date);
+            SimpleDateFormat spf = new SimpleDateFormat("dd MMM yyyy HH:mm:ss");
+            Log.d("hh4",spf.format(date));
+            return spf.format(date);
 
-            Date newDate = spf.parse(dateString);
-            spf= new SimpleDateFormat("dd MMM yyyy HH:mm:ss");
-            return spf.format(newDate);
-
-        } catch (ParseException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return null;
