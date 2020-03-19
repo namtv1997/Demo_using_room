@@ -8,10 +8,11 @@ import android.arch.persistence.room.TypeConverters;
 
 import com.example.demoroomdatabase.data.converter.TimestampConverter;
 
+import java.io.Serializable;
 import java.util.Date;
 
 @Entity(indices = {@Index(value = {"employ_name","employ_adrress"}, unique = true)})
-public class EmployeeEntity {
+public class EmployeeEntity implements Serializable {
 
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "employId")
@@ -58,7 +59,5 @@ public class EmployeeEntity {
     public void setAdrress(String adrress) {
         this.adrress = adrress;
     }
-
-
 
 }
