@@ -5,6 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/Demo-Room-Database.iml" filepath="$PROJECT_DIR$/Demo-Room-Database.iml" group="Demo-Room-Database" />
       <module fileurl="file://$PROJECT_DIR$/app/Demo-Room-Database-app.iml" filepath="$PROJECT_DIR$/app/Demo-Room-Database-app.iml" group="Demo-Room-Database/app" />
       <module fileurl="file://$PROJECT_DIR$/DemoRoomDatabase.iml" filepath="$PROJECT_DIR$/DemoRoomDatabase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Demo_using_room.iml" filepath="$PROJECT_DIR$/Demo_using_room.iml" group="Demo_using_room" />
+      <module fileurl="file://$PROJECT_DIR$/app/Demo_using_room-app.iml" filepath="$PROJECT_DIR$/app/Demo_using_room-app.iml" group="Demo_using_room/app" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
